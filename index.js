@@ -85,7 +85,7 @@ function addAlaramToDom(time, intervalId) {
   alarm.classList.add("alarm", "mb", "d-flex");
   alarm.innerHTML = `
               <div class="time">${time}</div>
-              <button class="btn delete-alarm" data-id=${intervalId}><i class="material-icons">delete</i></button>
+              <button class="btn delete-alarm" data-id=${intervalId}>delete</button>
               `;
   const deleteButton = alarm.querySelector(".delete-alarm");
   deleteButton.addEventListener("click", (e) => deleteAlarm(e, time, intervalId));
